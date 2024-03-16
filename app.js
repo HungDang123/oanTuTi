@@ -30,8 +30,8 @@ function win(user, computer) {
   userScore++;
   // console.log('user score is ' + userScore + ' ' + user);
   userScore_span.innerHTML = userScore;
-  const userName = ' (user)'.fontsize(3).sup();
-  const compName = ' (comp)'.fontsize(3).sup();
+  const userName = ' (Tngaa))'.fontsize(3).sup();
+  const compName = ' (Hùng đz)'.fontsize(3).sup();
   result_div.innerHTML = `<p>${convertCase(user)}${userName} beats ${convertCase(computer)}${compName}. You win!</p>`;
   const roundStatus = document.getElementById(user);
   roundStatus.classList.add('winningStyles');
@@ -43,8 +43,8 @@ function loses(user, computer) {
   computerScore++;
   // console.log('computer score is ' + computerScore + ' ' + computer);
   computerScore_span.innerHTML = computerScore;
-  const userName = ' (user)'.fontsize(3).sup();
-  const compName = ' (comp)'.fontsize(3).sup();
+  const userName = ' (Tngaa)'.fontsize(3).sup();
+  const compName = ' (Hùng đz)'.fontsize(3).sup();
   result_div.innerHTML = `<p>${convertCase(computer)}${compName} beats ${convertCase(user)}${userName}. You lose!</p>`;
   const roundStatus = document.getElementById(user);
   roundStatus.classList.add('losingStyles');
@@ -53,8 +53,8 @@ function loses(user, computer) {
 
 // Draw Condition - this handles what happens when the user clicks one of the choices where the value is them passed through as a parameter
 function draw(user, computer) {
-	const userName = ' (user)'.fontsize(3).sup();
-  const compName = ' (comp)'.fontsize(3).sup();
+	const userName = ' (Tngaa)'.fontsize(3).sup();
+  const compName = ' (Hùng đz)'.fontsize(3).sup();
   result_div.innerHTML = `<p>It was a draw! You both chose ${convertCase(user)}</p>`;
   // "It was a draw! You both chose " + user + " " + computer; // old js
   const roundStatus = document.getElementById(user);
